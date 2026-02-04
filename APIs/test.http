@@ -1,0 +1,62 @@
+###
+GET http://localhost:4000/user-api/users
+###
+
+
+####
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"uday",
+    "password":"kiran",
+    "age":24
+}
+
+### 
+
+
+
+
+
+
+
+###
+GET http://localhost:4000/product-api/products
+
+###
+POST http://127.0.0.1:4000/product-api/products
+Content-Type: application/json
+
+{
+    "pid":100,
+    "productName":"Mobile",
+    "price":15000
+}
+###
+GET http://localhost:4000/product-api/products/100
+
+###
+PUT http://localhost:4000/product-api/products/100
+Content-Type: application/json
+
+{
+    "pid":100,
+    "productName":"Fridge",
+    "price":2000
+
+}
+
+### use authintacion token
+POST http://localhost:4000/user-api/auth
+Content-Type: application/json
+
+{
+  "username":"uday",
+  "password":"kiran"
+}
+
+
+###
+GET http://localhost:4000/user-api/test
+  
